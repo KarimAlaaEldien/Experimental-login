@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <form id="registration">
+        <div class="container text-center my-5">
+            <div class="formContent w-75 m-auto p-5">
+                <h1>Smart Login System</h1>
+                <input id="nameInput" oninput="validatinput(this)"  class="form-control my-input my-3 "
+                    placeholder="Enter your Name" type="text">
+                <div class="alert alert-danger p-1 d-none" id="nAlert">
+                    <small>name must start with a capital letter and be no more than 12 letters</small>
+                </div>
+                <input id="emailInput" oninput="validatinput(this)" class="form-control my-input my-3 "
+                    placeholder="Enter your email" type="text">
+                <div class="alert alert-danger p-1 d-none" id="eAlert">
+                    <small>The email must not begin with a number and must be in the email format</small>
+                </div>
+                <input id="passwordInput" oninput="validatinput(this)" class="form-control my-input my-3 "
+                    placeholder="Enter your password" type="password">
+                <div class="alert alert-danger p-1 d-none " id="pAlert">
+                    <small>The password must start with a capital letter and contain numbers and use special character
+                        (#,$,%,&,*,_) and not least 8 charcter.</small>
+                </div>
+                <p id="textInfo"></p>
+
+                <button class="btn btn-outline-info w-100 my-3 ">Sign Up</button>
+                <p class="text-white">You have an account? <a href='../login/login.html' class='my-anchor text-white'>Sign
+                        in</a></p>
+            </div>
+        </div>
+    </form>
+
+
+    <script src="../signup/js/bootstrap.bundle.min.js"></script>
+    <script src="../signup/js/signup.js"></script>
+</body>
+
+</html>

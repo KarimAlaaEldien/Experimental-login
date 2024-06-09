@@ -1,0 +1,54 @@
+body {
+    background: #24353f;
+    font-family: 'Titillium Web', sans-serif;
+}
+.my-bg {
+    background-color: #24353f;
+    box-shadow: -5px 2px 54px -9px rgba(0, 0, 0, 1);
+}
+.btn-outline-warning {
+    --bs-btn-color: #818181;
+    --bs-btn-hover-color: #fff;
+}
+.navbar{
+    --bs-navbar-toggler-focus-width: 0;
+}
+.my-container{
+    height: 75vh;
+}
+
+h1 {
+    color: #17a2b8;
+}
+
+.formContent {
+    box-shadow: -5px 2px 54px -9px rgba(0, 0, 0, 1);
+}
+.formContent p a.my-anchor{
+    text-decoration: none;
+
+}
+.formContent p a.my-anchor:hover{
+    text-decoration: underline;
+}
+input.form-control.my-input{
+    background-color: transparent ;
+    color: #fff ;
+}
+input.form-control.my-input::placeholder{
+    color: rgb(182, 182, 182);
+}
+.formContent p#wrongValue, p#textInfo{
+    color: red;
+}
+
+input:focus {
+    box-shadow: 0 0 0 0 transparent !important;
+}
+@media all and (max-width: 992px) {
+    a#logout{
+        width: 100%;
+        margin-top: 5px;
+    }
+} 
+    
